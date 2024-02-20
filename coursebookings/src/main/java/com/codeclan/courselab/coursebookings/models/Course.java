@@ -25,7 +25,7 @@ public class Course {
     @Column(name="rating")
     private double rating;
 
-    @JsonBackReference
+
     @OneToMany(mappedBy = "course")
     private List<Booking> bookings;
 
