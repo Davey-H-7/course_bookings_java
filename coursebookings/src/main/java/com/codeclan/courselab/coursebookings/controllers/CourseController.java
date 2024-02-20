@@ -32,6 +32,7 @@ public class CourseController {
         return courseRepository.findById(id);
     }
 
+    //could be combined into getAllCourses using an if statement rating != null return findbyrating else return all.
     @GetMapping(value="/courses/ratings")
     public List<Course> findCoursesByGivenRatingQueryString(@RequestParam (name = "rated") double rating){
         return courseRepository.findByRating(rating);

@@ -31,7 +31,7 @@ public class CustomerController {
     public Optional<Customer> getCustomer(@PathVariable Long id){
         return customerRepository.findById(id);
     }
-
+//as per course controller note
     @GetMapping(value="/customers/courses")
     public List<Customer> findCustomersByGivenCourse(@RequestParam(name = "course_id") Long id){
         return customerRepository.findByBookingsCourseId(id);

@@ -29,7 +29,7 @@ public class BookingController {
     public Optional<Booking> getBooking(@PathVariable Long id){
         return bookingRepository.findById(id);
     }
-
+//as per course controller note
     @GetMapping(value="/bookings/dates")
     public List<Booking> findBookingsByDate(@RequestParam(name = "date") String date){
         return bookingRepository.findByDate(date);
