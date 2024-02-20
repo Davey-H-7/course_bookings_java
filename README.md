@@ -5,7 +5,8 @@ To Create a course reservations API utilising three models:
   - Booking with a date on which it was created
   - Customer with name, location and age
 
-Each booking should have an assosciated customer who created it and the course to which the customer is booked on to
+Each booking should have an associated customer who created it and the course to which the customer is booked on to.
+Each customer should be capable of having multiple bookings. Each course should be capable of having multiple bookings.
 
 ## Set Up
 - clone the repository onto local machine
