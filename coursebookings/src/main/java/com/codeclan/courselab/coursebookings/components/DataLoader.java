@@ -12,8 +12,9 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
-@Profile("!test")
+
 @Component
+@Profile("!test")
 public class DataLoader implements ApplicationRunner {
 
     @Autowired
